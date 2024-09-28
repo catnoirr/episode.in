@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    gap: 50px;
+}
+
+.box {
+    background-color: white;
+    padding: 30px;
+    /* width: 45%; */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.box h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.box p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color:#dcaa97 ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.topics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topic-box {
+    text-align: center;
+}
+
+.topic-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.topic-box p {
+    font-size: 1em;
+    font-weight: 600;
+}
+.topic-box p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+i{
+    font-size: 30px;
+}
+.nav{
+            width: 90%;
+            margin: 0 auto;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#dcaa97 ;
+            margin-top: 10px;
+            border-radius: 2rem;
+            position: fixed; /* Fixes the navbar */
+    top: 0; /* Sticks it to the top of the viewport */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Ensures the centering works with fixed positioning */
+
+    z-index: 1000; /* Ensures it's above other content */
+
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        @media (max-width:768px){
+            .quick-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Episode.in</a>
+        <a href="index.html">Shop</a>
+        <a href="trend.html">Trend</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+        <a href="">More..</a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Welcome to Customer Service</h1>
+            <p>How can we help you today?</p>
+            <h2>QUICK LINKS</h2>
+        </header>
+
+        <div class="quick-links">
+            <div class="box">
+                <h3>I WANT TO KNOW WHERE MY ORDER IS</h3>
+                <p>Enter the order number found in the order confirmation email</p>
+                <label for="order-number">Order no*</label>
+                <input type="text" id="order-number" placeholder="e.g. 31234567890">
+                <button>Track my order</button>
+            </div>
+
+            <div class="box">
+                <h3>I WANT TO RETURN SOMETHING</h3>
+                <p>Register returns easily online. All you need is the order number found in the order confirmation email, and the email address used when placing your order.</p>
+                <p>The return request must be raised within 15 days from the date you receive your parcel</p>
+                <button>Register a return</button>
+            </div>
+        </div>
+
+        <footer>
+            <h3>POPULAR TOPICS</h3>
+            <div class="topics">
+                <div class="topic-box">
+                    <i class='bx bx-package'></i>
+                                        <p>DELIVERY</p>
+                </div>
+                <div class="topic-box">
+                    <i class='bx bx-left-down-arrow-circle'></i>           
+                             <p>RETURNS</p>
+                </div>
+                <div class="topic-box">
+                    <i class='bx bx-wallet'></i>                    <p>PAYMENTS</p>
+                </div>
+                <div class="topic-box">
+                    <i class='bx bx-gift' ></i>                    <p>GIFT CARD</p>
+                </div>
+            </div>
+        </footer>
+    </div><br>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

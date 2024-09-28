@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Episode.in</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 40px 20px;
+            margin-top: 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #222;
+            font-family: 'Georgia', serif;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .about-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #c19a6b; /* Fashionable color */
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .team-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background-color: #fff;
+            width: 30%;
+            height: 500px;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 90%;
+            height: 350px;
+            border-radius: 1rem;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer a {
+            color: #c19a6b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .nav{
+            width: 85%;
+            margin: 0 auto;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#dcaa97 ;
+            margin-top: 10px;
+            border-radius: 2rem;
+            position: fixed; /* Fixes the navbar */
+    top: 0; /* Sticks it to the top of the viewport */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Ensures the centering works with fixed positioning */
+
+    z-index: 1000; /* Ensures it's above other content */
+    padding: 10px;
+
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .team-member {
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Episode.in</a>
+        <a href="index.html">Shop</a>
+        <a href="trend.html">Trend</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+        <a href="">More..</a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>About Episode.in</h1>
+            <p>Style that speaks your identity</p>
+        </header>
+
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>
+                Welcome to Episode.in, your fashion destination where every piece tells a story. Founded with a passion for style, Episode.in offers a unique blend of comfort, quality, and elegance in our clothing collections. We believe fashion is not just about looking good—it's about feeling confident in your skin.
+            </p>
+            <p>
+                Since our inception, we’ve been dedicated to crafting collections that reflect individuality, creativity, and the ever-evolving trends of the fashion world. Our journey started with a small team of enthusiasts who shared a common vision—to make affordable, stylish, and sustainable fashion accessible to everyone.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                At Episode.in, our mission is to bring you the latest in fashion, curated with care and designed to make you feel your best. We focus on sustainable practices, ensuring that each garment is ethically produced, without compromising on quality or comfort. From casual wear to statement pieces, our collections cater to the diverse tastes and preferences of fashion lovers everywhere.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-section">
+                <div class="team-member">
+                    <img src="./images/l1.jpeg" alt="Team Member 1">
+                    <h3>Sophia Allen</h3>
+                    <p>Founder & Creative Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="./images/p1.jpeg" alt="Team Member 2">
+                    <h3>James Hunter</h3>
+                    <p>Head of Design</p>
+                </div>
+                <div class="team-member">
+                    <img src="./images/l3.jpeg" alt="Team Member 3">
+                    <h3>Olivia Carter</h3>
+                    <p>Marketing & Brand Strategist</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Episode.in - Style with a Purpose</p>
+        </footer>
+    </div>
+</body>
+</html>
